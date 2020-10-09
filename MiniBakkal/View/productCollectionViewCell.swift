@@ -84,11 +84,7 @@ class productCollectionViewCell: UICollectionViewCell {
         
         let addProduct = selectedProducts(productName: productName.text!, productPrice: Double(productPrice.text!)!, productPiece: Int(totalPieceLabel.text!)!, productImageUrl: URLImage, productStock: Int(stockLabel.text!)!, productCurrency: currencyLabel.text!)
         
-         // Burada butonlara her tıklamada addProduct'ları diziye ekliyorum. Fakat bu sefer müşterinin farklı tıklamalarında oluşacak seneryolarda sepete gittiğimizde ürünlerin tekrarlandığını görüyorum. Bu tekrarlanma sorununu aşmak için  <selectedProducts, Int> dictionarylerini kullanarak diziye ekledim. Fakat tekrarlama sorununu çözmedi. Bu yüzden daha fazla ürün gösterilmemesi için eksi butonuna tıklandığında addData() fonksiyonunu çalıştırmadım.
         
-        // Not: Bu sorunu çözmek için çok fazla araştırma yaptım fakat hiçbirisi işime yaramadı. Çözüm için ne yapmam gerektiğini söyleyebilirseniz çok sevinirim.
-       
-        // mail : ustunel.onur@gmail.com
         
         allOrderArray.append(addProduct)
         
